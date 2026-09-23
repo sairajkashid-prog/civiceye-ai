@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Sairaj S Kashid - All rights reserved
 const express = require('express');
 const cors = require('cors');
 const multer = require('multer');

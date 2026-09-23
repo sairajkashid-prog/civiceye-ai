@@ -123,3 +123,6 @@ See `docker-compose.yml`
 ---
 
 ## 📄 License — Academic use only.
+
+---
+**© 2026 Sairaj S Kashid. All rights reserved.**
