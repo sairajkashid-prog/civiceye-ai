@@ -1,0 +1,14 @@
+node_modules/
+dist/
+uploads/*.jpg
+uploads/*.png
+uploads/*.jpeg
+.env
+.DS_Store
+.vite/
+coverage/
+build/
+out/
+target/
+.arena
+.cache
