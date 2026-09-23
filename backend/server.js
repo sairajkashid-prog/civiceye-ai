@@ -36,7 +36,7 @@ const upload = multer({ storage, limits: { fileSize: 8 * 1024 * 1024 } });
 
 // In-memory stores (Persist to JSON for demo; in production -> PostgreSQL + Redis)
 let users = [
-  { id: 'u1', name: 'Mazin Ansari', email: 'citizen@test.com', password: bcrypt.hashSync('citizen123', 10), role: 'citizen', ward: 'Kothrud' },
+  { id: 'u1', name: 'Sairaj S Kashid', email: 'citizen@test.com', password: bcrypt.hashSync('citizen123', 10), role: 'citizen', ward: 'Kothrud' },
   { id: 'u2', name: 'Officer R. Sharma', email: 'officer@test.com', password: bcrypt.hashSync('officer123', 10), role: 'officer', department: 'Road & Infrastructure' },
   { id: 'u3', name: 'Admin', email: 'admin@test.com', password: bcrypt.hashSync('admin123', 10), role: 'admin', department: 'All' }
 ];

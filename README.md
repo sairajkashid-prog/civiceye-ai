@@ -1,8 +1,8 @@
 # CivicEye AI — AI-Powered Smart Civic Issue Detection & Management System
-### B.Tech CSE Capstone Project Level-2 | Group P52 | MIT World Peace University
+### B.Tech CSE Capstone Project Level-2 | Sairaj S Kashid | MIT World Peace University
 
-**Guide:** Dr. Vitthal Sadashiv Gutte  
-**Team:** Mazin Ansari (1032233483) • Pawan Kumar Singh (1032233471) • Ayush Mahajan (1032233492) • Chaitanya Purkar (1032233488)
+**Author:** Sairaj S Kashid  
+**GitHub:** sairajkashid-prog (github.com/sairajkashid-prog)
 
 ---
 

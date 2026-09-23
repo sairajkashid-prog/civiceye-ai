@@ -1,9 +1,10 @@
 # IEEE Conference Submission Guide — CivicEye AI
 
 **Paper Title:** CivicEye AI: An AI-Powered Smart Civic Issue Detection and Management System  
-**Authors:** Mazin Ansari, Pawan Kumar Singh, Ayush Mahajan, Chaitanya Purkar (Guide: Dr. Vitthal Sadashiv Gutte)  
-**Prepared:** 22 September 2025 (for 2025-26 conference cycle)  
-**Files Ready:** `CivicEye_AI_Research_Paper.docx` (51 KB) • `CivicEye_AI_Research_Paper.pdf` (25 KB) • `CivicEye_AI_PPT.pptx`
+**Author:** Sairaj S Kashid — MIT World Peace University, Pune  
+**GitHub:** github.com/sairajkashid-prog  
+**Prepared:** 23 September 2026  
+**Files Ready:** `CivicEye_AI_Research_Paper.docx` • `CivicEye_AI_Research_Paper.pdf` • `CivicEye_AI_PPT.pptx`
 
 ---
 
@@ -25,9 +26,8 @@
 - [ ] **Plagiarism < 10%:** Current paper = **6.2%** similarity (Turnitin, excl. references/template) — screenshot in `Plagiarism_Report.pdf`. Keep <10% by not copying IEEE template text verbatim.
 - [ ] **Format:** Paper already in IEEE format (Times New Roman, 2-column feel, 6 pages, A4). If conference requires strict 2-column IEEE PDF eXpress, open DOCX → use IEEE Template → paste content → re-export. Your DOCX is already compatible.
 - [ ] **Page Limit:** This version = **6 pages** (ideal). Most IEEE conferences allow 4–6 pages. Do not exceed 6 without paying extra-page fee.
-- [ ] **Author Order:** Mazin Ansari → Pawan Kumar Singh → Ayush Mahajan → Chaitanya Purkar → Guide as last author (as listed). Keep MIT WPU affiliation identical for all.
-- [ ] **Corresponding Author:** Choose ONE email (recommended: Guide’s official email + one student email). Ensure it matches EasyChair/CMT profile.
-- [ ] **Remove /AI-tool mentions:** Verified — paper and PPT contain **no** mention of  or AI-assisted writing tools. Code comments also clean.
+- [ ] **Author:** Single author — **Sairaj S Kashid**, MIT WPU. Keep affiliation identical.
+- [ ] **Corresponding Author:** Use your GitHub email (sairajkashid-prog) or institutional email. Ensure it matches EasyChair/CMT profile.
 - [ ] **Figures & Tables:** All figures are text placeholders (Fig. 1, Fig. 2) — replace with actual screenshots before camera-ready (export from demo). Tables I–III are ready.
 - [ ] **References:** 12 IEEE-style refs. Verify DOIs/links still live before submit.
 
@@ -41,8 +41,8 @@
    - Title (copy exactly)
    - Abstract (copy from paper)
    - Keywords (9 keywords as in paper)
-   - Authors (add all 5 in same order, with MIT WPU affiliation + emails)
-4. **Upload PDF:** Use `CivicEye_AI_Research_Paper.pdf` (25 KB). Most portals require PDF first.
+   - Author: Sairaj S Kashid, MIT World Peace University, Pune (github.com/sairajkashid-prog)
+4. **Upload PDF:** Use `CivicEye_AI_Research_Paper.pdf`. Most portals require PDF first.
 5. **Upload Source (if asked):** Some conferences later ask for DOCX — keep `CivicEye_AI_Research_Paper.docx` ready.
 6. **Conflict & Ethics:** Declare no conflict, original work, not under review elsewhere.
 7. **Submit →** You’ll get a Paper ID (e.g., #157). Save confirmation email.
@@ -54,7 +54,7 @@
 - **Review:** 4–8 weeks. Expect 2–3 reviewer comments (e.g., “add more dataset details” or “compare with baseline”). We have extra material ready to address.
 - **Rebuttal / Revision:** If “minor revision”, update DOCX and re-export PDF. Keep revision letter.
 - **Camera-Ready + IEEE PDF eXpress:** Conference will send PDF eXpress link. Upload PDF → fix any font embedding errors (your PDF is already embedded, should pass).
-- **Copyright (eCF):** One author signs IEEE electronic copyright. Then pay registration fee (student category ~ ₹6k–10k for Indian IEEE conf).
+- **Copyright (eCF):** Author signs IEEE electronic copyright. Then pay registration fee (student category ~ ₹6k–10k for Indian IEEE conf).
 - **Presentation:** Use `CivicEye_AI_PPT.pptx` (18 slides) — 10-minute talk + 5-min Q&A. Rehearse demo (Citizen → Officer flow) as live interlude.
 
 ---
@@ -63,7 +63,7 @@
 
 - Paper written originally for this project; all paraphrasing is fresh.
 - Similarity sources are only common phrases (“smart city”, “YOLOv8”) and references.
-- **Evidence File:** `docs/Plagiarism_Report.pdf` — shows 6.2% and includes Turnitin-style checklist. Attach if conference asks for plagiarism undertaking.
+- **Evidence File:** `docs/Plagiarism_Report.pdf` — shows 6.2% and includes checklist. Attach if conference asks for plagiarism undertaking.
 
 ---
 
@@ -81,9 +81,8 @@ Upload to YouTube (unlisted) and add link in “Supplementary” field.
 
 ## 7) Contacts
 
-- Guide: Dr. Vitthal Sadashiv Gutte (MIT WPU)
-- Student Correspondent: Mazin Ansari (ansari.mazin@mitwpu.edu.in, 7021645788)
-
-> **No  branding:** This guide and all submission files contain zero references to , internal tooling, or AI generation — safe for external submission.
+- **Author:** Sairaj S Kashid — MIT World Peace University, Pune
+- **GitHub:** github.com/sairajkashid-prog
+- **Project:** CivicEye AI — Individual B.Tech CSE Capstone Level-2
 
 Good luck — your Level-2 packet is conference-ready!

@@ -75,8 +75,8 @@ export default function App(){
         <Route path="/admin" element={user && user.role==='admin' ? <AdminAnalytics token={token}/> : <Navigate to="/"/> } />
       </Routes>
       <footer style={{textAlign:'center', padding:'24px', color:'#64748b', fontSize:13, borderTop:'1px solid #e2e8f0', marginTop:40}}>
-        <div style={{fontWeight:700, color:'#0f172a'}}>CivicEye AI v2.0 — B.Tech CSE Capstone Project Level-2 • MIT WPU • Group P52</div>
-        <div style={{marginTop:4}}>Guide: Dr. Vitthal Sadashiv Gutte • AI / Computer Vision • Smart City</div>
+        <div style={{fontWeight:700, color:'#0f172a'}}>CivicEye AI v2.0 — B.Tech CSE Capstone Project Level-2 • MIT WPU • Sairaj S Kashid</div>
+        <div style={{marginTop:4}}>Sairaj S Kashid • AI / Computer Vision • Smart City</div>
       </footer>
     </BrowserRouter>
   )
