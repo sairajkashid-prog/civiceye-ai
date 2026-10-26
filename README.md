@@ -56,13 +56,16 @@ Backend (Node/Express) → PostgreSQL + Redis → Officer Dashboard ↔ Analytic
 
 ## 🐳 Docker Deployment (Production)
 ```bash
+cp .env.example .env   # then edit .env and set strong POSTGRES_PASSWORD & JWT_SECRET
 docker-compose up --build
 # Frontend: http://localhost:80
 # Backend:  http://localhost:5000
 # Postgres: :5432 | Redis: :6379
 ```
 
-See `docker-compose.yml`
+Secrets are read from environment variables (see `.env.example`); the committed
+defaults exist only to keep the local demo zero-config and must never be used in
+production. See `docker-compose.yml`.
 
 ---
 

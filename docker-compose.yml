@@ -5,7 +5,8 @@ services:
     environment:
       POSTGRES_DB: civiceye
       POSTGRES_USER: civiceye
-      POSTGRES_PASSWORD: civiceye123
+      # Override in a local .env file (see .env.example); defaults keep the demo zero-config
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-civiceye123}
     ports: ["5432:5432"]
     volumes: ["pgdata:/var/lib/postgresql/data"]
 
@@ -17,9 +18,9 @@ services:
     build: ./backend
     ports: ["5000:5000"]
     environment:
-      DATABASE_URL: postgres://civiceye:civiceye123@postgres:5432/civiceye
+      DATABASE_URL: postgres://civiceye:${POSTGRES_PASSWORD:-civiceye123}@postgres:5432/civiceye
       REDIS_URL: redis://redis:6379
-      JWT_SECRET: civiceye_jwt_secret_2025_level2
+      JWT_SECRET: ${JWT_SECRET:-dev-only-insecure-secret-change-me}
     depends_on: [postgres, redis]
     volumes: ["./backend/uploads:/app/uploads"]
 

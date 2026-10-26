@@ -17,7 +17,12 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: '*' } });
 
 const PORT = process.env.PORT || 5000;
-const JWT_SECRET = 'civiceye_jwt_secret_2025_level2';
+// Always set JWT_SECRET via environment variable in production (see .env.example).
+// The fallback exists only so the local demo runs with zero configuration.
+const JWT_SECRET = process.env.JWT_SECRET || 'dev-only-insecure-secret-change-me';
+if (!process.env.JWT_SECRET) {
+  console.warn('[security] JWT_SECRET is not set — using an insecure development fallback. Do not use this in production.');
+}
 
 // Middleware
 app.use(cors());

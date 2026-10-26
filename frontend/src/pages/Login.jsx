@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 const API = '/api'
 
+// Demo-only seed accounts (created in backend/server.js). Not real credentials —
+// every deployment must replace the seed users and set JWT_SECRET via environment.
 export default function Login({ onLogin }){
   const [isRegister, setIsRegister] = useState(false)
   const [form, setForm] = useState({ name:'', email:'citizen@test.com', password:'citizen123', ward:'Kothrud' })
