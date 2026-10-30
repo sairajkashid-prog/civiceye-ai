@@ -1,6 +1,6 @@
 // Copyright (c) 2026 Sairaj S Kashid - All rights reserved
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom'
+import { Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom'
 import CitizenDashboard from './pages/CitizenDashboard.jsx'
 import ReportIssue from './pages/ReportIssue.jsx'
 import OfficerDashboard from './pages/OfficerDashboard.jsx'
@@ -66,7 +66,7 @@ export default function App(){
   };
 
   return (
-    <BrowserRouter>
+    <>
       <Navbar user={user} onLogout={handleLogout} />
       <Routes>
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
@@ -79,6 +79,6 @@ export default function App(){
         <div style={{fontWeight:700, color:'#0f172a'}}>CivicEye AI v2.0 — B.Tech CSE Capstone Project Level-2 • MIT WPU • Sairaj S Kashid</div>
         <div style={{marginTop:4}}>Sairaj S Kashid • AI / Computer Vision • Smart City</div>
       </footer>
-    </BrowserRouter>
+    </>
   )
 }
