@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  // relative asset paths so the build works from any subpath (GitHub Pages / Vercel)
+  base: './',
   plugins: [react()],
   server: {
     host: '0.0.0.0',
