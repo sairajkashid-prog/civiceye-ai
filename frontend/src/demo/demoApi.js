@@ -20,14 +20,14 @@ const now = Date.now()
 const h = (n) => new Date(now - n * 3600 * 1000).toISOString()
 
 const SEED = [
-  { id:'CV-2026-1042', description:'Large pothole near Kothrud depot, water collects during rain and two-wheelers skid.', category:'Pothole', categoryKey:'pothole', confidence:0.96, department:'Roads & Infrastructure', address:'Kothrud Depot Road, Kothrud, Pune', lat:18.5074, lng:73.8077, priorityScore:88, priorityLevel:'Critical', status:'In Progress', createdAt:h(6), updatedAt:h(1), highlights:[{x:0.42,y:0.55,w:0.2,h:0.16}], remarks:[{status:'Assigned',remark:'Inspection scheduled',at:h(4)}] },
-  { id:'CV-2026-1041', description:'Garbage not collected for 4 days behind Dahanukar Colony society gate.', category:'Garbage', categoryKey:'garbage', confidence:0.93, department:'Sanitation', address:'Dahanukar Colony, Kothrud, Pune', lat:18.5022, lng:73.8192, priorityScore:71, priorityLevel:'High', status:'Assigned', createdAt:h(11), updatedAt:h(3), highlights:[], remarks:[] },
-  { id:'CV-2026-1040', description:'Streetlight pole dark for entire stretch, unsafe for women walking at night.', category:'Streetlight', categoryKey:'streetlight', confidence:0.91, department:'Electrical', address:'Paud Road, Kothrud, Pune', lat:18.5009, lng:73.8014, priorityScore:84, priorityLevel:'Critical', status:'Open', createdAt:h(18), updatedAt:h(18), highlights:[], remarks:[] },
-  { id:'CV-2026-1039', description:'Water pipeline leaking continuously on footpath, wasting drinking water.', category:'Water Leakage', categoryKey:'water', confidence:0.89, department:'Water Supply', address:'Karve Road, Erandwane, Pune', lat:18.5041, lng:73.8261, priorityScore:76, priorityLevel:'High', status:'Resolved', createdAt:h(30), updatedAt:h(9), highlights:[], remarks:[{status:'Resolved',remark:'Valve replaced by ward team',at:h(9)}] },
-  { id:'CV-2026-1038', description:'Open drain covering broken near school gate, risk for children.', category:'Drainage', categoryKey:'drainage', confidence:0.94, department:'Sanitation', address:'Shivaji Housing Society, Kothrud, Pune', lat:18.4991, lng:73.8139, priorityScore:92, priorityLevel:'Critical', status:'In Progress', createdAt:h(34), updatedAt:h(5), highlights:[], remarks:[] },
-  { id:'CV-2026-1037', description:'Illegal parking blocking ambulance lane outside clinic.', category:'Illegal Parking', categoryKey:'parking', confidence:0.87, department:'Traffic Police', address:'Vanasthal Road, Kothrud, Pune', lat:18.5056, lng:73.8042, priorityScore:58, priorityLevel:'Medium', status:'Resolved', createdAt:h(52), updatedAt:h(20), highlights:[], remarks:[] },
-  { id:'CV-2026-1036', description:'Fallen tree branch on cycle track after last night wind.', category:'Tree Fallen', categoryKey:'tree', confidence:0.9, department:'Parks & Gardens', address:'Kothrud Flyover, Pune', lat:18.5083, lng:73.8155, priorityScore:64, priorityLevel:'High', status:'Closed', createdAt:h(70), updatedAt:h(40), highlights:[], remarks:[] },
-  { id:'CV-2026-1035', description:'Stray dog pack near bus stop, children scared.', category:'Stray Animal', categoryKey:'animal', confidence:0.85, department:'Animal Control', address:'Dhakde Colony, Kothrud, Pune', lat:18.5033, lng:73.8088, priorityScore:42, priorityLevel:'Low', status:'Assigned', createdAt:h(88), updatedAt:h(60), highlights:[], remarks:[] },
+  { id:'CV-2026-1042', description:'Large pothole near Kothrud depot, water collects during rain and two-wheelers skid.', category:'Pothole', categoryKey:'pothole', confidence:0.96, department:'Roads & Infrastructure', address:'Kothrud Depot Road, Kothrud, Pune', location:{lat:18.5074,lng:73.8077}, priorityScore:88, priorityLevel:'Critical', status:'In Progress', createdAt:h(6), updatedAt:h(1), highlights:[{x:0.42,y:0.55,w:0.2,h:0.16}], remarks:[{status:'Assigned',remark:'Inspection scheduled',at:h(4)}] },
+  { id:'CV-2026-1041', description:'Garbage not collected for 4 days behind Dahanukar Colony society gate.', category:'Garbage', categoryKey:'garbage', confidence:0.93, department:'Sanitation', address:'Dahanukar Colony, Kothrud, Pune', location:{lat:18.5022,lng:73.8192}, priorityScore:71, priorityLevel:'High', status:'Assigned', createdAt:h(11), updatedAt:h(3), highlights:[], remarks:[] },
+  { id:'CV-2026-1040', description:'Streetlight pole dark for entire stretch, unsafe for women walking at night.', category:'Streetlight', categoryKey:'streetlight', confidence:0.91, department:'Electrical', address:'Paud Road, Kothrud, Pune', location:{lat:18.5009,lng:73.8014}, priorityScore:84, priorityLevel:'Critical', status:'Open', createdAt:h(18), updatedAt:h(18), highlights:[], remarks:[] },
+  { id:'CV-2026-1039', description:'Water pipeline leaking continuously on footpath, wasting drinking water.', category:'Water Leakage', categoryKey:'water', confidence:0.89, department:'Water Supply', address:'Karve Road, Erandwane, Pune', location:{lat:18.5041,lng:73.8261}, priorityScore:76, priorityLevel:'High', status:'Resolved', createdAt:h(30), updatedAt:h(9), highlights:[], remarks:[{status:'Resolved',remark:'Valve replaced by ward team',at:h(9)}] },
+  { id:'CV-2026-1038', description:'Open drain covering broken near school gate, risk for children.', category:'Drainage', categoryKey:'drainage', confidence:0.94, department:'Sanitation', address:'Shivaji Housing Society, Kothrud, Pune', location:{lat:18.4991,lng:73.8139}, priorityScore:92, priorityLevel:'Critical', status:'In Progress', createdAt:h(34), updatedAt:h(5), highlights:[], remarks:[] },
+  { id:'CV-2026-1037', description:'Illegal parking blocking ambulance lane outside clinic.', category:'Illegal Parking', categoryKey:'parking', confidence:0.87, department:'Traffic Police', address:'Vanasthal Road, Kothrud, Pune', location:{lat:18.5056,lng:73.8042}, priorityScore:58, priorityLevel:'Medium', status:'Resolved', createdAt:h(52), updatedAt:h(20), highlights:[], remarks:[] },
+  { id:'CV-2026-1036', description:'Fallen tree branch on cycle track after last night wind.', category:'Tree Fallen', categoryKey:'tree', confidence:0.9, department:'Parks & Gardens', address:'Kothrud Flyover, Pune', location:{lat:18.5083,lng:73.8155}, priorityScore:64, priorityLevel:'High', status:'Closed', createdAt:h(70), updatedAt:h(40), highlights:[], remarks:[] },
+  { id:'CV-2026-1035', description:'Stray dog pack near bus stop, children scared.', category:'Stray Animal', categoryKey:'animal', confidence:0.85, department:'Animal Control', address:'Dhakde Colony, Kothrud, Pune', location:{lat:18.5033,lng:73.8088}, priorityScore:42, priorityLevel:'Low', status:'Assigned', createdAt:h(88), updatedAt:h(60), highlights:[], remarks:[] },
 ]
 
 const USERS = {
@@ -76,7 +76,23 @@ function analytics(complaints) {
     avgResolutionHours: Math.round(avg * 10) / 10,
     duplicateRate: 12.4,
     openCritical: complaints.filter(c => c.priorityLevel === 'Critical' && c.status !== 'Closed').length,
-    trend: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map((d,i) => ({ day:d, reported: 12 + ((i*7)%11), resolved: 9 + ((i*5)%9) })),
+    // real 7-day rollup from the in-memory dataset (date + count, matching AdminAnalytics)
+    trend: (() => {
+      const days = []
+      for (let i = 6; i >= 0; i--) {
+        const d = new Date(Date.now() - i * 86400000)
+        const key = d.toISOString().slice(0, 10)
+        days.push({
+          date: key,
+          count: complaints.filter(c => (c.createdAt || '').slice(0, 10) === key).length,
+        })
+      }
+      // demo dataset is compact: spread historical records so the line is readable
+      if (days.every(d => d.count === 0)) {
+        return days.map((d, i) => ({ ...d, count: [3, 5, 2, 6, 4, 7, complaints.length][i] }))
+      }
+      return days
+    })(),
   }
 }
 
@@ -138,8 +154,7 @@ export function installDemoApi() {
         confidence: 0.9 + Math.round(Math.random() * 8) / 100,
         department: DEPT_BY_CAT[category] || 'Sanitation',
         address: get('address') || 'Kothrud, Pune',
-        lat: parseFloat(get('lat')) || 18.5074,
-        lng: parseFloat(get('lng')) || 73.8077,
+        location: { lat: parseFloat(get('lat')) || 18.5074, lng: parseFloat(get('lng')) || 73.8077 },
         priorityScore: pri.score,
         priorityLevel: pri.level,
         status: 'Open',
